@@ -1,0 +1,29 @@
+header.header#header
+    .header__inner
+        .header__container.container
+            nav.menu
+                a(href="index.html").menu__logo.custom-logo-link 
+                    img(src="assets/img/logo.svg", alt="logo").custom-logo
+                button(type="button").burger
+                    span.burger__top
+                    span.burger__middle
+                    span.burger__bottom
+                ul.menu__list
+                    li.menu__item
+                        a.menu__link(href='#') главная
+                    li.menu__item
+                        a.menu__link(href='#') каталог продукции
+                    li.menu__item
+                        a.menu__link(href='#') подбор программы
+                
+    .header__offer
+        .container
+            .offer 
+                .offer__info 
+                    h1.offer__title Функциональное питание для котов
+                    span.offer__subtitle Занялся собой? Займись котом!
+                    button(type="button").offer__btn.btn подобрать программу
+                a(href="assets/img/offer-product.png").offer__img
+                    img(src="assets/img/offer-product.png", alt="product")
+                button(type="button").offer__btn.offer__btn_reverse.btn подобрать программу
+

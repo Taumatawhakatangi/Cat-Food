@@ -1,0 +1,84 @@
+.instructions
+    padding 40px 0 40px
+    &__title 
+        margin-bottom 72px
+    &__list
+        display flex
+        justify-content space-between
+    &__item 
+        // border 1px solid black
+        margin 0 40px
+    &__inner
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        min-height 280px
+        padding-bottom 57px
+        position relative
+        cursor grab
+        user-select none
+        &:hover .instructions__counter
+            color darken(color4, 20%)
+    &__container 
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        position: relative
+        max-width 1330px
+    &__counter 
+        font-size 280px
+        color color4 
+        position absolute
+        top -106px
+        right -10px
+        z-index 1  
+        transition all .4s linear
+    &__icon 
+        width 80px
+        height 80px
+        background-color color3
+        position relative
+        margin-bottom 31px
+        z-index 2
+        & img 
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            z-index 2
+    &__text 
+        color color5
+        font-family "Arial"
+        z-index 2
+        position relative
+        max-width 235px
+    &__slider 
+        position relative
+
+.instructions__arrow
+    position absolute
+    top 85px
+    z-index 5
+    &_left
+        left -80px
+
+    &_right
+        right -80px
+
+.slick-prev.slick-arrow 
+    top 85px
+    position absolute
+    left -80px
+    font-size 0
+    width 45px
+    height 35px
+    background url(../img/arrow-paw-left.svg) no-repeat
+
+.slick-next.slick-arrow
+    top 85px
+    position absolute
+    right -80px
+    font-size 0
+    width 45px
+    height 35px
+    background url(../img/arrow-paw-right.svg) no-repeat

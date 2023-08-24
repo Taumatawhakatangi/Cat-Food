@@ -1,0 +1,259 @@
+// main: ../main.css
+
+@media (max-width: 1480px) {
+  .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+    top initial
+    bottom -40px
+  }
+  .slick-next.slick-arrow {
+    right 40%
+  }
+  .slick-prev.slick-arrow  {
+    left 40%
+  }
+  .instructions {
+    padding-bottom 80px
+  }
+}
+
+@media (max-width: 1267px) {
+  .weight-results {
+    right 6%
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .header__offer::after {
+    display none
+  }
+  .menu__item a {
+    color: color2
+  }
+  .header__offer {
+    z-index 1
+    }
+  .animal-weight__list {
+    grid-template-columns 1fr  
+    justify-items center
+  }
+    .animal-weight__wrapper {
+      width 100%
+  }
+  .weight-results {
+    position relative
+    top 50px
+    right 0
+    margin 0 auto
+    max-width 540px
+  }
+} // 1200px
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+  .offer {
+    display block
+  }
+  .header__offer {
+    padding-top 162px
+  }
+  .offer__info {
+    margin-bottom 40px
+  }
+  .header {
+    padding-bottom 0
+  }
+  .header__container {
+    position: static
+    }
+} // 992px
+
+@media (max-width: 864px) {
+  .menu__list {
+    position absolute
+    top -53px
+    right 0
+    display flex
+    flex-direction column
+    background-color #27782c
+    padding 70px 35px 100px
+    border-bottom-left-radius 35px
+    display none
+    transition all .4s ease
+    z-index 3
+  }
+  .burger.active + .menu__list {
+    display block
+  }
+  .menu__list
+  .menu__item:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+  .menu__item:not(:last-of-type) {
+    margin-right: 0;
+  }
+  .menu__item a {
+    color color1
+  }
+  .burger {
+    display block
+  }
+  .burger.active {
+    z-index 10
+    top -32px
+    right -19px
+  }
+  .burger span.active {
+    background-color color1
+  }
+
+} // 864px
+
+@media (max-width: 768px) {
+  .offer__info {
+    padding-left 0
+  }
+  .header__offer::after {
+    display block
+    width 100%
+    top 120px
+  }
+  .offer {
+    position relative
+    z-index 2
+    text-align center
+  }
+  .offer__title { 
+    max-width 100%
+    color color1
+  }
+  .offer__subtitle {
+    color color1
+  }
+  .header__inner  {
+    top 33px
+  }
+  .custom-logo-link {
+    max-width 190px
+  }
+  .offer__btn {
+    display none
+  }
+  .offer__btn_reverse {
+    display block
+    width 100%
+  }
+  .offer__info {
+    margin-bottom 0
+  }
+  .instructions__title {
+    text-align center
+  }
+   .result h2 {
+    text-align center
+  }
+  .result p {
+    max-width initial
+  }
+  .result__price-wrapper,
+    .result__data {
+    justify-content center
+  }
+  .weight-results img {
+    max-width 365px
+  }
+  .weight-results__before {
+    left 85px
+  }
+  .weight-results__after {
+    right 85px
+  }
+  .weight-results__text {
+    bottom 75px
+  }
+  .weight-results {
+    max-width 410px
+    min-width 401px
+  }
+} // 768px
+
+@media (max-width: 576px) {
+  .animal-weight__head {
+    flex-wrap wrap
+    justify-content center
+  }
+  .animal-weight__wrapper {
+    padding 0
+  }
+  .animal-weight__list {
+    grid-gap 40px
+  }
+  .animal-weight__icon {
+    margin-bottom 40px
+    margin-right 0
+  }
+  .animal-weight h3 {
+    width 100%
+    text-align center
+  }
+   
+  .slick-next.slick-arrow {
+    right 20%
+  }
+  .slick-prev.slick-arrow  {
+    left 20%
+  }
+  .instructions__item {
+    margin 0 15px
+  }
+  .result__subtitle_days {
+    right -6px
+  }
+  .result__data {
+    flex-direction column
+  }
+  .result__quantity_weight {
+    margin-right 0
+  }
+  .result__price-title {
+    margin-right 0
+    margin-bottom 30px
+  }
+  .result__price-wrapper {
+    align-items center
+    flex-direction column
+  }
+  .footer__inner {
+    flex-direction column
+    align-items center
+  }
+  .footer__list {
+    margin-top 40px
+  }
+} // 576px
+
+@media (max-width: 442px) {
+  .weight-results {
+    min-width 300px
+    max-width 314px
+    min-height 480px
+  }
+  .weight-results img {
+    max-width 275px
+  }
+  
+} //442px
+
+@media (orientation: landscape) and (max-width: 992px) {
+  .offer__title {
+    padding-bottom: 0;
+  }
+  .offer__input {
+    margin-bottom: 15px;
+  }
+} // landscape

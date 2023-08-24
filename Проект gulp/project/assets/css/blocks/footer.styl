@@ -1,0 +1,19 @@
+.footer 
+    padding 58px 0
+    background-color color4
+    &__list 
+        display flex
+    &__item:not(:last-of-type)
+        margin-right 12px
+    &__inner 
+        display flex
+        align-items: center
+        justify-content space-between
+    &__link
+        img 
+            transition all .1s ease
+            width 40px
+            height 40px
+            opacity: 0.6
+        &:hover img 
+            opacity 1

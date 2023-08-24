@@ -1,0 +1,60 @@
+.animal-weight
+    padding 40px 0
+    &__list 
+        display grid
+        grid-template-columns (1fr 1fr) 
+        grid-gap 80px
+    &__wrapper
+        padding 47px 52px 55px
+        max-width 570px
+        min-height 374px
+        transition: all .3s ease
+        &:hover
+            background-color color4
+    &__icon 
+        width 100px
+        height 100px
+        border-radius 50%
+        background-color color3
+        display block
+        position relative
+        margin-right 62px
+        & img 
+            position absolute
+            top 0
+            left 20px
+        &_jaguar
+            & img 
+                min-width 134px
+                top 20px
+                left -23px
+    &__head 
+    &__info 
+        max-width: 430px
+        margin-bottom 39px
+        display flex
+        align-items: center
+    & h3
+        font-size calc(24px + (36 - 24) * ((100vw - 320px) / (1920 - 320)));
+        line-height 36px
+        color color2
+        text-transform uppercase
+    & a 
+        padding 23px 40px 23px 0
+        font-size calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+        line-height 29.64px
+        text-transform uppercase
+        position relative
+        font-weight 400
+        &::after
+            content ""
+            display block
+            position absolute
+            width 32px
+            height 10px
+            background url(../img/Arrow.svg)
+            top 30px
+            right -30px
+            transition: all .4s ease
+.animal-weight__wrapper a:hover::after 
+    right -45px 

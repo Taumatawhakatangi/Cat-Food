@@ -1,0 +1,25 @@
+ul  <!-- Циклы -->
+    -
+        var list = ["Uno", "Dos", "Tres",
+                "Cuatro", "Cinco", "Seis"]
+    each item in list
+        li 
+            a(href="#")= item
+
+
+
+footer.footer#footer
+    |
+    |
+    a(href="") 1
+    |
+    a(href="") 2
+    |
+    |
+    a(href="") 3 
+
+
+
+mixin link(href, name)
+  a(href=href)&attributes(attributes)= name
++link('/foo', 'Магазин')(class="btn")
